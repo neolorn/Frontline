@@ -4,6 +4,7 @@
     <option name="locations">
       <list>
         <option value="$PROJECT_DIR$/Frontline/bin/Release/net8.0/win-x64/publish" />
+        <option value="$PROJECT_DIR$/Frontline/bin/Release/net10.0-windows10.0.22000.0/publish" />
       </list>
     </option>
   </component>

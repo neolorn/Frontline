@@ -72,12 +72,17 @@ internal sealed class SigningService : ISigningService
         // Keep the script intentionally simple and tolerant:
         // - No timestamp server (avoids network flakiness)
         // - Only hard-fail if the certificate is missing
-        // - Any non-Valid status from Set-AuthenticodeSignature is logged but not treated as fatal
+        // - Any non-Valid status or signing error is logged but not treated as fatal
         return $$"""
                  $cert = Get-ChildItem Cert:\CurrentUser\My | Where-Object Thumbprint -eq '{{escapedThumbprint}}'
                  if (-not $cert) { throw 'Certificate not found' }
 
-                 $result = Set-AuthenticodeSignature -FilePath '{{escapedFile}}' -Certificate $cert
+                 try {
+                   $result = Set-AuthenticodeSignature -FilePath '{{escapedFile}}' -Certificate $cert -ErrorAction Stop
+                 } catch {
+                   Write-Output ("Signing skipped: {0}" -f $_.Exception.Message)
+                   return
+                 }
 
                  if ($result.Status -ne 'Valid') {
                    Write-Output ("Signing completed with status {0}: {1}" -f $result.Status, $result.StatusMessage)

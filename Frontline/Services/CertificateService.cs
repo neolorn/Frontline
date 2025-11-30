@@ -8,15 +8,28 @@ internal sealed class CertificateService : ICertificateService
 {
     private const string Subject = "CN=Frontline Code Signing";
     private static readonly TimeSpan RenewalMargin = TimeSpan.FromDays(30);
+    private const string CodeSigningOid = "1.3.6.1.5.5.7.3.3";
 
     public async Task<string> EnsureCertificateAsync()
     {
         using var store = new X509Store(StoreName.My, StoreLocation.CurrentUser);
         store.Open(OpenFlags.ReadWrite | OpenFlags.OpenExistingOnly);
 
-        var existing = store.Certificates
+        var candidates = store.Certificates
             .Find(X509FindType.FindBySubjectDistinguishedName, Subject, false)
-            .FirstOrDefault(c => c.NotAfter > DateTime.UtcNow + RenewalMargin);
+            .Cast<X509Certificate2>()
+            .Where(c => c.NotAfter > DateTime.UtcNow + RenewalMargin)
+            .ToList();
+
+        // Filter out any stale certificates that don't actually have the code-signing EKU.
+        var existing = candidates.FirstOrDefault(HasCodeSigningEku);
+
+        if (existing is null && candidates.Count > 0)
+        {
+            Log.Information(
+                "Found {Count} certificate(s) with subject {Subject}, but none have the Code Signing EKU ({Oid}); generating a fresh one.",
+                candidates.Count, Subject, CodeSigningOid);
+        }
 
         if (existing is not null)
         {
@@ -38,7 +51,7 @@ internal sealed class CertificateService : ICertificateService
 
         request.CertificateExtensions.Add(
             new X509EnhancedKeyUsageExtension(
-                new OidCollection { new Oid("1.3.6.1.5.5.7.3.3") }, false)); // Code signing
+                new OidCollection { new Oid(CodeSigningOid) }, false)); // Code signing
 
         request.CertificateExtensions.Add(
             new X509KeyUsageExtension(X509KeyUsageFlags.DigitalSignature, false));
@@ -55,6 +68,28 @@ internal sealed class CertificateService : ICertificateService
                                 throw new InvalidOperationException("Generated certificate has no thumbprint");
         Log.Information("Created certificate {Thumbprint}", createdThumbprint);
         return createdThumbprint;
+    }
+
+    private static bool HasCodeSigningEku(X509Certificate2 cert)
+    {
+        try
+        {
+            foreach (var extension in cert.Extensions)
+            {
+                if (extension is not X509EnhancedKeyUsageExtension eku)
+                    continue;
+
+                foreach (var oid in eku.EnhancedKeyUsages)
+                    if (string.Equals(oid.Value, CodeSigningOid, StringComparison.Ordinal))
+                        return true;
+            }
+        }
+        catch
+        {
+            // If we can't inspect EKUs for any reason, treat as not suitable.
+        }
+
+        return false;
     }
 
     private static async Task InstallToTrustStoresAsync(X509Certificate2 cert)

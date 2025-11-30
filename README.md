@@ -261,5 +261,5 @@ Please also include any relevant details about your environment (Windows version
 
 ## License
 
-This project does not currently include an explicit license. Until a license is added, all rights are reserved by the author. If you plan to use Frontline in a way that goes beyond simple experimentation, please open an issue or contact the maintainer.
+This project is licensed under the [MIT License](https://github.com/neolorn/Frontline/tree/main?tab=MIT-1-ov-file).
 

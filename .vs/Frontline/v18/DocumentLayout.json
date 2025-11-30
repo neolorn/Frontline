@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|f:\\workbench\\[personal]\\frontline\\frontline\\frontline\\services\\certificateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|solutionrelative:frontline\\services\\certificateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|f:\\workbench\\[personal]\\frontline\\frontline\\frontline\\services\\icertificateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|solutionrelative:frontline\\services\\icertificateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|f:\\workbench\\[personal]\\frontline\\frontline\\frontline\\services\\iprivilegeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|solutionrelative:frontline\\services\\iprivilegeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|f:\\workbench\\[personal]\\frontline\\frontline\\frontline\\services\\isigningservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|solutionrelative:frontline\\services\\isigningservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|f:\\workbench\\[personal]\\frontline\\frontline\\frontline\\services\\istubbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|solutionrelative:frontline\\services\\istubbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|f:\\workbench\\[personal]\\frontline\\frontline\\frontline\\services\\launcherspec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|solutionrelative:frontline\\services\\launcherspec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|f:\\workbench\\[personal]\\frontline\\frontline\\frontline\\services\\logutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|solutionrelative:frontline\\services\\logutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|f:\\workbench\\[personal]\\frontline\\frontline\\frontline\\services\\privilegeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|solutionrelative:frontline\\services\\privilegeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|f:\\workbench\\[personal]\\frontline\\frontline\\frontline\\services\\serviceregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|solutionrelative:frontline\\services\\serviceregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|f:\\workbench\\[personal]\\frontline\\frontline\\frontline\\services\\signingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|solutionrelative:frontline\\services\\signingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|f:\\workbench\\[personal]\\frontline\\frontline\\frontline\\services\\templates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|solutionrelative:frontline\\services\\templates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|f:\\workbench\\[personal]\\frontline\\frontline\\frontline\\services\\stubbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DD8E5A-9E90-4842-9832-BF4CF8D58488}|Frontline\\Frontline.csproj|solutionrelative:frontline\\services\\stubbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CertificateService.cs",
+              "DocumentMoniker": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\CertificateService.cs",
+              "RelativeDocumentMoniker": "Frontline\\Services\\CertificateService.cs",
+              "ToolTip": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\CertificateService.cs",
+              "RelativeToolTip": "Frontline\\Services\\CertificateService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:44:59.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ICertificateService.cs",
+              "DocumentMoniker": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\ICertificateService.cs",
+              "RelativeDocumentMoniker": "Frontline\\Services\\ICertificateService.cs",
+              "ToolTip": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\ICertificateService.cs",
+              "RelativeToolTip": "Frontline\\Services\\ICertificateService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:44:51.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPrivilegeService.cs",
+              "DocumentMoniker": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\IPrivilegeService.cs",
+              "RelativeDocumentMoniker": "Frontline\\Services\\IPrivilegeService.cs",
+              "ToolTip": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\IPrivilegeService.cs",
+              "RelativeToolTip": "Frontline\\Services\\IPrivilegeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:44:50.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ISigningService.cs",
+              "DocumentMoniker": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\ISigningService.cs",
+              "RelativeDocumentMoniker": "Frontline\\Services\\ISigningService.cs",
+              "ToolTip": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\ISigningService.cs",
+              "RelativeToolTip": "Frontline\\Services\\ISigningService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:44:50.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IStubBuilder.cs",
+              "DocumentMoniker": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\IStubBuilder.cs",
+              "RelativeDocumentMoniker": "Frontline\\Services\\IStubBuilder.cs",
+              "ToolTip": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\IStubBuilder.cs",
+              "RelativeToolTip": "Frontline\\Services\\IStubBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:44:49.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LauncherSpec.cs",
+              "DocumentMoniker": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\LauncherSpec.cs",
+              "RelativeDocumentMoniker": "Frontline\\Services\\LauncherSpec.cs",
+              "ToolTip": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\LauncherSpec.cs",
+              "RelativeToolTip": "Frontline\\Services\\LauncherSpec.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:44:48.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LogUtilities.cs",
+              "DocumentMoniker": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\LogUtilities.cs",
+              "RelativeDocumentMoniker": "Frontline\\Services\\LogUtilities.cs",
+              "ToolTip": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\LogUtilities.cs",
+              "RelativeToolTip": "Frontline\\Services\\LogUtilities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:44:48.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PrivilegeService.cs",
+              "DocumentMoniker": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\PrivilegeService.cs",
+              "RelativeDocumentMoniker": "Frontline\\Services\\PrivilegeService.cs",
+              "ToolTip": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\PrivilegeService.cs",
+              "RelativeToolTip": "Frontline\\Services\\PrivilegeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:44:47.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServiceRegistry.cs",
+              "DocumentMoniker": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\ServiceRegistry.cs",
+              "RelativeDocumentMoniker": "Frontline\\Services\\ServiceRegistry.cs",
+              "ToolTip": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\ServiceRegistry.cs",
+              "RelativeToolTip": "Frontline\\Services\\ServiceRegistry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:44:47.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SigningService.cs",
+              "DocumentMoniker": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\SigningService.cs",
+              "RelativeDocumentMoniker": "Frontline\\Services\\SigningService.cs",
+              "ToolTip": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\SigningService.cs",
+              "RelativeToolTip": "Frontline\\Services\\SigningService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:44:45.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Templates.cs",
+              "DocumentMoniker": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\Templates.cs",
+              "RelativeDocumentMoniker": "Frontline\\Services\\Templates.cs",
+              "ToolTip": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\Templates.cs",
+              "RelativeToolTip": "Frontline\\Services\\Templates.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:44:45.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StubBuilder.cs",
+              "DocumentMoniker": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\StubBuilder.cs",
+              "RelativeDocumentMoniker": "Frontline\\Services\\StubBuilder.cs",
+              "ToolTip": "F:\\Workbench\\[Personal]\\Frontline\\Frontline\\Frontline\\Services\\StubBuilder.cs",
+              "RelativeToolTip": "Frontline\\Services\\StubBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:44:42.789Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

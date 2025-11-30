@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0-windows10.0.22000.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <PublishAot>true</PublishAot>
+        <SelfContained>true</SelfContained>
+        <PublishSingleFile>true</PublishSingleFile>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+        <AssemblyTitle>Frontline</AssemblyTitle>
+        <NuGetAudit>True</NuGetAudit>
+        <Title>Frontline</Title>
+        <Platforms>x64;ARM64</Platforms>
+        <ApplicationIcon>favicon.ico</ApplicationIcon>
+        <PackageId>Frontline</PackageId>
+        <Authors>Neolorn</Authors>
+        <Description>Silent launcher generator for Windows.</Description>
+        <PackageIcon>favicon-32x32.png</PackageIcon>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="JetBrains.Annotations" Version="2025.2.4"/>
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="5.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.0"/>
+        <PackageReference Include="Serilog" Version="4.3.0"/>
+        <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1"/>
+        <PackageReference Include="Serilog.Sinks.File" Version="7.0.0"/>
+        <PackageReference Include="Spectre.Console" Version="0.54.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="StubTemplate\frontline-stub.exe"
+                          LogicalName="Frontline.StubTemplate"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="favicon-32x32.png">
+        <Pack>True</Pack>
+      </None>
+    </ItemGroup>
+
+    <PropertyGroup>
+        <FrontlineStubProject>$(MSBuildThisFileDirectory)..\Frontline.Stub\Frontline.Stub.csproj</FrontlineStubProject>
+        <FrontlineStubPublishDir>$(MSBuildThisFileDirectory)StubTemplate\_published</FrontlineStubPublishDir>
+        <FrontlineStubTemplatePath>$(MSBuildThisFileDirectory)StubTemplate\frontline-stub.exe</FrontlineStubTemplatePath>
+    </PropertyGroup>
+
+    <Target Name="PublishFrontlineStubTemplate"
+            BeforeTargets="BeforeBuild">
+        <Message Text="Publishing embedded stub template from $(FrontlineStubProject)" Importance="Low"/>
+        <MakeDir Directories="$(FrontlineStubPublishDir)"/>
+        <MakeDir Directories="$(MSBuildThisFileDirectory)StubTemplate\"/>
+        <!-- Publish NativeAOT stub as a small self-contained launcher -->
+        <Exec Command="dotnet publish &quot;$(FrontlineStubProject)&quot; -c $(Configuration) -r win-x64 -o &quot;$(FrontlineStubPublishDir)&quot; /p:PublishAot=true /p:StripSymbols=true /p:InvariantGlobalization=true"
+              IgnoreExitCode="false"/>
+        <ItemGroup>
+            <_PublishedStubExe Include="$(FrontlineStubPublishDir)\frontline-stub.exe"/>
+        </ItemGroup>
+        <Copy SourceFiles="@(_PublishedStubExe)"
+              DestinationFiles="$(FrontlineStubTemplatePath)"
+              OverwriteReadOnlyFiles="true"/>
+    </Target>
+
+</Project>

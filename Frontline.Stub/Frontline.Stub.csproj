@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net10.0-windows10.0.22000.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <!-- Native AOT, small self-contained launcher -->
+        <PublishAot>true</PublishAot>
+        <StripSymbols>true</StripSymbols>
+        <InvariantGlobalization>true</InvariantGlobalization>
+
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <AssemblyName>frontline-stub</AssemblyName>
+    </PropertyGroup>
+
+</Project>
